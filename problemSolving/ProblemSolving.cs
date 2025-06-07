@@ -113,12 +113,13 @@ namespace problemSolving
             {
                 int countNum = 0;
                 int countLetter = 0;
-                for(int i = 0; i<sintense.Length;i++)
+                for (int i = 0; i < sintense.Length; i++)
                 {
                     if (char.IsDigit(sintense[i]))
                     {
                         countNum++;
-                    }else if (char.IsLetter(sintense[i]))
+                    }
+                    else if (char.IsLetter(sintense[i]))
                     {
                         countLetter++;
                     }
@@ -132,6 +133,19 @@ namespace problemSolving
             }
 
             return null;
+        }
+
+
+        public static string MultiplicationForNum(int num)
+        {
+            //StringBuilder temp = new StringBuilder();
+            //string temp = "";
+            StringBuilder temp=new StringBuilder();
+            for (int i = 1; i <= 10; i++)
+            {
+                temp.Append($"{i} * {num} = {i * num}\n");
+            }
+            return temp.ToString();
         }
 
     }
