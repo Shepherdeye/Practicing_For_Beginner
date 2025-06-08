@@ -140,13 +140,52 @@ namespace problemSolving
         {
             //StringBuilder temp = new StringBuilder();
             //string temp = "";
-            StringBuilder temp=new StringBuilder();
+            StringBuilder temp = new StringBuilder();
             for (int i = 1; i <= 10; i++)
             {
                 temp.Append($"{i} * {num} = {i * num}\n");
             }
             return temp.ToString();
         }
+
+        public static int GCD(int val1, int val2)
+        {
+            int gcd = 0;
+
+            List<int> val1GCd = new();
+            List<int> val2GCd = new();
+
+            for (int i = 1; i <= val1; i++)
+            {
+                if (val1 % i == 0)
+                {
+                    val1GCd.Add(i);
+                }
+                continue;
+            }
+
+            for (int i = 1; i <= val2; i++)
+            {
+                if (val2 % i == 0)
+                {
+                    val2GCd.Add(i);
+                }
+                continue;
+            }
+
+            foreach (int num1 in val1GCd)
+            {
+
+                if (val2GCd.Contains(num1) && num1 > gcd)
+                {
+                    gcd= num1;
+                }
+            }
+
+            return gcd;
+
+        }
+
 
     }
 }

@@ -19,13 +19,15 @@ namespace problemSolving
             //Console.WriteLine(ProblemSolving.Palindrome("madam"));
             //7
             //Console.WriteLine(ProblemSolving.CountOfNumAndLetter("ma dam123"));
-
+            //8
+            //Console.WriteLine(ProblemSolving.MultiplicationForNum(3));
+            //9
+            //Console.WriteLine(ProblemSolving.GCD(18,12));
 
 
 
             #endregion
 
-            Console.WriteLine(ProblemSolving.MultiplicationForNum(3));
 
         }
     }
