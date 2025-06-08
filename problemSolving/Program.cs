@@ -12,7 +12,7 @@ namespace problemSolving
             #region Beginner
             //1
             //Console.WriteLine(ProblemSolving.PrintHundred());
-            //Console.WriteLine(ProblemSolving.IsEven(10)?"Even":"Odd");
+            //Console.WriteLine(ProblemSolving.IsEven(10)?"even":"Odd");
             //Console.WriteLine(ProblemSolving.CalcTon(525.5));
             //Console.WriteLine(ProblemSolving.FactorialN(10));
             //Console.WriteLine(ProblemSolving.Reverse(""));
@@ -27,7 +27,7 @@ namespace problemSolving
             //Console.WriteLine(ProblemSolving.CountEvenNumbersInRange(10,20));
             //12
             //Console.WriteLine(ProblemSolving.SumDigits(444));
-
+            Console.WriteLine(ProblemSolving.FindPrimeNum(2,10));
 
 
             #endregion

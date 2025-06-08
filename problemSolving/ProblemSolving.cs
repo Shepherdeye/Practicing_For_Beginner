@@ -233,13 +233,54 @@ namespace problemSolving
 
             for (int i = 0; i < numString.Length; i++)
             {
-                sum +=numString[i]-'0';
+                sum += numString[i] - '0';
             }
 
             return sum;
 
         }
 
+
+        public static string? FindPrimeNum(int a, int b)
+        {
+            //if (a <= 1) return "fail,you should start from 2 or over 2";
+
+            List<int> primeNums = new();
+
+            for (int i = a; i <= b; i++)
+            {
+                if (i < 2) continue;
+
+                bool isPrime = true;
+
+                for (int j = 2; j <= Math.Sqrt(i); j++)
+                {
+                    if (i % j == 0)
+                    {
+
+                        isPrime = false;
+
+                    }
+
+                }
+
+                if (isPrime) { 
+                
+                primeNums.Add(i);
+
+                }
+
+
+            }
+
+
+            string templates = String.Join(",", primeNums);
+
+            return $"[{templates}]";
+
+
+
+        }
 
     }
 }
