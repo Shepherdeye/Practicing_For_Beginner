@@ -200,6 +200,30 @@ namespace problemSolving
             return a;
         }
 
+        public static int CountEvenNumbersInRange( int a,  int b)
+        {
+            if (a > b) {
+                int temp = a;
+                a = b;
+                b = temp;
+
+            }
+
+            int count = 0;
+
+            for(int i = a; i <= b; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    count++;
+                }
+                continue;
+            }
+
+
+            return count;
+        }
+
 
     }
 }

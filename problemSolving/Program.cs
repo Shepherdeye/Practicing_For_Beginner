@@ -23,7 +23,9 @@ namespace problemSolving
             //Console.WriteLine(ProblemSolving.MultiplicationForNum(3));
             //9
             //Console.WriteLine(ProblemSolving.GCD(20,12));
-            Console.WriteLine(ProblemSolving.GCDS(20,12));
+            //Console.WriteLine(ProblemSolving.GCDS(20,12));
+            Console.WriteLine(ProblemSolving.CountEvenNumbersInRange(10,20));
+
 
 
 
