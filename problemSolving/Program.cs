@@ -24,8 +24,9 @@ namespace problemSolving
             //9
             //Console.WriteLine(ProblemSolving.GCD(20,12));
             //Console.WriteLine(ProblemSolving.GCDS(20,12));
-            Console.WriteLine(ProblemSolving.CountEvenNumbersInRange(10,20));
-
+            //Console.WriteLine(ProblemSolving.CountEvenNumbersInRange(10,20));
+            //12
+            //Console.WriteLine(ProblemSolving.SumDigits(444));
 
 
 

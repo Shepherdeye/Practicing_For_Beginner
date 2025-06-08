@@ -200,9 +200,10 @@ namespace problemSolving
             return a;
         }
 
-        public static int CountEvenNumbersInRange( int a,  int b)
+        public static int CountEvenNumbersInRange(int a, int b)
         {
-            if (a > b) {
+            if (a > b)
+            {
                 int temp = a;
                 a = b;
                 b = temp;
@@ -211,7 +212,7 @@ namespace problemSolving
 
             int count = 0;
 
-            for(int i = a; i <= b; i++)
+            for (int i = a; i <= b; i++)
             {
                 if (i % 2 == 0)
                 {
@@ -222,6 +223,21 @@ namespace problemSolving
 
 
             return count;
+        }
+
+        public static int SumDigits(int num)
+        {
+            int sum = default;
+
+            string numString = Convert.ToString(num);
+
+            for (int i = 0; i < numString.Length; i++)
+            {
+                sum +=numString[i]-'0';
+            }
+
+            return sum;
+
         }
 
 
