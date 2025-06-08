@@ -22,7 +22,8 @@ namespace problemSolving
             //8
             //Console.WriteLine(ProblemSolving.MultiplicationForNum(3));
             //9
-            //Console.WriteLine(ProblemSolving.GCD(18,12));
+            //Console.WriteLine(ProblemSolving.GCD(20,12));
+            Console.WriteLine(ProblemSolving.GCDS(20,12));
 
 
 

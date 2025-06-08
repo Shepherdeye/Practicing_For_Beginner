@@ -178,12 +178,26 @@ namespace problemSolving
 
                 if (val2GCd.Contains(num1) && num1 > gcd)
                 {
-                    gcd= num1;
+                    gcd = num1;
                 }
             }
 
             return gcd;
 
+        }
+
+        public static int GCDS(int a, int b)
+        {
+            while (b != 0)
+            {
+
+                int temp = b;
+                b = a % b;
+                a = temp;
+            }
+
+
+            return a;
         }
 
 
