@@ -243,7 +243,12 @@ namespace problemSolving
 
         public static string? FindPrimeNum(int a, int b)
         {
-            //if (a <= 1) return "fail,you should start from 2 or over 2";
+            if (a > b)
+            {
+                int temp = a;
+                a = b;
+                b = temp;
+            }
 
             List<int> primeNums = new();
 
@@ -257,11 +262,8 @@ namespace problemSolving
                 {
                     if (i % j == 0)
                     {
-
                         isPrime = false;
-
                     }
-
                 }
 
                 if (isPrime) { 

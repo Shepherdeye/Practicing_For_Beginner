@@ -27,7 +27,8 @@ namespace problemSolving
             //Console.WriteLine(ProblemSolving.CountEvenNumbersInRange(10,20));
             //12
             //Console.WriteLine(ProblemSolving.SumDigits(444));
-            Console.WriteLine(ProblemSolving.FindPrimeNum(2,10));
+            //13
+            //Console.WriteLine(ProblemSolving.FindPrimeNum(10,1));
 
 
             #endregion
