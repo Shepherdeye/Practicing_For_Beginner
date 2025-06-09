@@ -266,9 +266,10 @@ namespace problemSolving
                     }
                 }
 
-                if (isPrime) { 
-                
-                primeNums.Add(i);
+                if (isPrime)
+                {
+
+                    primeNums.Add(i);
 
                 }
 
@@ -282,6 +283,23 @@ namespace problemSolving
 
 
 
+        }
+
+        public static int ReverseInt(int num)
+        {
+            string numString = Convert.ToString(num);
+            string newNum = "";
+
+            if (numString.Contains("-")) newNum = "-";
+            
+
+           for(int i = numString.Length - 1; i >= 0; i--)
+            {
+                if (numString[i] == '-') continue;
+                 newNum += numString[i];
+            }
+
+            return Convert.ToInt32(newNum);
         }
 
     }

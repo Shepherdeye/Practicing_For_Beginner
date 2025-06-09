@@ -29,6 +29,7 @@ namespace problemSolving
             //Console.WriteLine(ProblemSolving.SumDigits(444));
             //13
             //Console.WriteLine(ProblemSolving.FindPrimeNum(10,1));
+            //Console.WriteLine(ProblemSolving.ReverseInt(625));
 
 
             #endregion
