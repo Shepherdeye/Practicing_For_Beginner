@@ -30,6 +30,13 @@ namespace problemSolving
             //13
             //Console.WriteLine(ProblemSolving.FindPrimeNum(10,1));
             //Console.WriteLine(ProblemSolving.ReverseInt(625));
+            // 15
+            List<int> nums = new List<int> { 4,1,1,2,4,5,1};
+            //Console.WriteLine(ProblemSolving.MaxNumber(nums));
+            //Console.WriteLine(ProblemSolving.CountVowels("sayeid"));
+            //Console.WriteLine(ProblemSolving.RemoveDuplication(nums));
+            Console.WriteLine(ProblemSolving.Anagrams("aab", "aba") ?"Anagrams":"not anagrams");
+
 
 
             #endregion

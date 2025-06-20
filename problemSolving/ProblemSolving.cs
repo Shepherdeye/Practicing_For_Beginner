@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Linq;
 using System.Security.Cryptography;
@@ -291,16 +292,78 @@ namespace problemSolving
             string newNum = "";
 
             if (numString.Contains("-")) newNum = "-";
-            
 
-           for(int i = numString.Length - 1; i >= 0; i--)
+
+            for (int i = numString.Length - 1; i >= 0; i--)
             {
                 if (numString[i] == '-') continue;
-                 newNum += numString[i];
+                newNum += numString[i];
             }
 
             return Convert.ToInt32(newNum);
         }
 
+        public static int MaxNumber(List<int> nums)
+        {
+
+            int largest = 0;
+
+            for (int i = 0; i < nums.Count; i++)
+            {
+                if (nums[i] > largest)
+                {
+                    largest = nums[i];
+                }
+            }
+
+            return largest;
+        }
+
+        public static int CountVowels(string text)
+        {
+            string[] vowels = ["a", "i", "e", "u", "o"];
+            int vowelsCount = 0;
+            for (int i = 0; i < vowels.Length; i++)
+            {
+                if (text.Contains(vowels[i])) vowelsCount++;
+                continue;
+            }
+            return vowelsCount;
+        }
+
+        public static string RemoveDuplication(List<int> nums)
+        {
+            for (int i = 0; i < nums.Count; i++)
+            {
+                for (int j = i + 1; j < nums.Count; j++)
+                {
+                    if (nums[j] == nums[i])
+                    {
+                        nums.RemoveAt(j);
+                    }
+                }
+            }
+
+            return $"[{String.Join(",", nums)}]";
+        }
+
+        public static bool Anagrams(string val1, string val2)
+        {
+
+            if (val1.Length != val2.Length) return false;
+
+
+
+            int sameCount = 0;
+            for (int i = 0; i < val1.Length; i++)
+            {
+                if (val2.Contains(val1[i])) sameCount += 1;
+            }
+
+            if (sameCount == val2.Length) return true;
+            else
+                return false;
+
+        }
     }
 }
